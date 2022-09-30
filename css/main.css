@@ -27,6 +27,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .body {
@@ -106,6 +108,7 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  border: 1px solid red;
 }
 
 .header-container {
@@ -170,6 +173,7 @@ img {
   height: 600px;
   width: 1600px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 .hero__title {
   font-weight: 900;
@@ -277,6 +281,7 @@ img {
 
 .images {
   padding-bottom: 94px;
+  border: 1px solid red;
 }
 .images__container {
   display: -webkit-box;
@@ -391,6 +396,7 @@ img {
   padding: 0;
   gap: 10px;
   margin-top: 16px;
+  border: 1px solid red;
 }
 .social__title {
   font-weight: 500;
@@ -441,6 +447,7 @@ img {
 
 .clients {
   padding: 94px 0;
+  border: 1px solid red;
 }
 .clients__title {
   font-weight: 700;
@@ -495,6 +502,7 @@ img {
 
 .footer {
   background-color: var(--dark-grey-clr);
+  border: 1px solid red;
 }
 .footer__container {
   padding: 60px 0;
@@ -683,6 +691,7 @@ img {
 .port {
   padding-top: 94px;
   padding-bottom: 94px;
+  border: 1px solid red;
 }
 .port__container {
   display: -webkit-box;
@@ -842,6 +851,7 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid red;
 }
 .vector__btn {
   position: absolute;
@@ -988,6 +998,7 @@ input {
 .field:hover,
 .field:focus {
   border: 1px solid var(--main-clr);
+  color: var(--main-clr);
 }
 
 .modal__name {
