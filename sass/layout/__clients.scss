@@ -1,11 +1,17 @@
 .clients {
-    padding: 94px 0;
+    padding: 60px 0;
     border: 1px solid red;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
 
 
     &__title {
             font-weight: 700;
-            font-size: 36px;
+            font-size: 28px;
             line-height: calc(42 / 36);
             text-align: center;
             letter-spacing: 0.03em;
@@ -18,12 +24,24 @@
             display: flex;
             padding: 0;
             gap: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+
+
+            @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+            }
         }
     
         &__container {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     
         &__link {
@@ -45,6 +63,8 @@
             fill: var(--main-clr);
             border: 1px solid var(--main-clr);
         }
+
+
 }
 
 
