@@ -54,7 +54,12 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-button">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg
             class="menu__svg"
             width="24"
@@ -67,7 +72,7 @@
       </div>
     </header>
 
-    <!-- <main class="main">
+    <main class="main">
       <section class="hero">
         <div class="container main-container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -484,9 +489,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <address class="footer__address">
           <a href="" class="footer__web"><span class="webt">Web</span>Studio</a>
@@ -663,6 +668,22 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+      <button class="menu-container-close__btn js-close-menu">
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#icon-navigation"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="">Студія</a></li>
+          <li><a href="">Портфоліо</a></li>
+          <li><a href="">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script
@@ -670,6 +691,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
   </body>
 </html>
