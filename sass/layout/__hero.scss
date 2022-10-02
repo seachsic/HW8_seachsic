@@ -11,11 +11,16 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
   border: 1px solid red;
 
   @media screen and (min-width: 300px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/business2x.jpg);
   }
 
   .main-container {
@@ -23,7 +28,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
   }
 
   &__title {
