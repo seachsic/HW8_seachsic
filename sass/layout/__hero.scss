@@ -15,6 +15,10 @@
   margin: 0 auto;
   border: 1px solid red;
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   @media screen and (min-width: 300px) and (max-width: 1199px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -23,11 +27,20 @@
       url(/images/business2x.jpg);
   }
 
-  .main-container {
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/business.jpg);
+  }
+
+  .container.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
   }
 
   &__title {
@@ -42,7 +55,6 @@
     flex-wrap: wrap;
     width: 360px;
     height: 84px;
-    margin: 0 auto 30px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -61,7 +73,6 @@
     border-radius: 4px;
     padding: 10px 32px;
     border: transparent;
-    margin: 0 auto;
 
     transition-property: background-color;
     transition-duration: 250ms;
