@@ -1,30 +1,41 @@
 .hero {
   background-color: var(--dark-grey-clr);
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/business.jpg);
+    url(../images/business2x.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 1200px;
   margin: 0 auto;
   border: 1px solid red;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-position: center;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 
-  @media screen and (min-width: 300px) and (max-width: 1199px) {
+  @media screen and (min-width: 300px) and (max-width: 767px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/business2x.jpg);
+      url(/images/business1.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/business-tab.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -33,6 +44,8 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(/images/business.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .container.main-container {
@@ -58,6 +71,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   &__btn {

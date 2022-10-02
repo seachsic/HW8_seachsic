@@ -98,6 +98,17 @@ img {
   display: flex;
   gap: 50px;
   padding: 0;
+  margin-right: 96px;
+}
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .nav__list {
+    gap: 50px;
+  }
 }
 .nav__link.current {
   color: var(--main-clr);
@@ -133,8 +144,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: auto;
+  margin: 0 15px;
   padding: 32px 0;
+  position: relative;
+}
+
+.icon__navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .webt {
@@ -156,7 +179,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--dark-clr);
   text-decoration: none;
-  margin-right: 92px;
+  margin-right: 87px;
+}
+@media screen and (min-width: 1200px) {
+  .web {
+    margin-right: 92px;
+  }
 }
 
 .info {
@@ -167,28 +195,88 @@ img {
   gap: 50px;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  .info {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .mail__svg {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .tel__svg {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.menu_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_btn {
+    display: none;
+  }
+}
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .hero {
   background-color: var(--dark-grey-clr);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/business.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/business.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/business2x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/business2x.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 1200px;
   margin: 0 auto;
   border: 1px solid red;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-position: center;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -198,16 +286,24 @@ img {
             flex-direction: row;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 1199px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/business2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/business2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/business1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/business1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/business-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/business-tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/business.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/business.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero .container.main-container {
@@ -248,6 +344,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 .hero__btn {
   font-weight: 700;
@@ -493,10 +590,19 @@ img {
 .team {
   background-color: var(--light-grey-clr);
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .person__container {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: block;
 }
 
 .person__list {
@@ -506,6 +612,20 @@ img {
   display: flex;
   gap: 30px;
   padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .person__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .person__team {
@@ -523,6 +643,11 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .person__text {
+    width: 270px;
+  }
 }
 
 .social {
