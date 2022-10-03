@@ -74,22 +74,44 @@ img {
   margin-right: auto;
 }
 .nav__link {
-  text-decoration: none;
-  color: inherit;
-  padding: 32px 0;
+  display: none;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: var(--dark-txt-clr);
+  color: var(--grey-txt-clr);
+  fill: var(--grey-txt-clr);
   text-decoration: none;
-  position: relative;
+  padding: 32px 0;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--main-clr);
+  fill: var(--main-clr);
 }
 .nav__list {
   list-style: none;
@@ -250,6 +272,17 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 480px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .menu__svg {
+    display: none;
+  }
 }
 
 .hero {
@@ -1014,6 +1047,17 @@ img {
   gap: 8px;
   padding-left: 0;
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .port__btns {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .port__btn {
   cursor: pointer;
@@ -1048,6 +1092,20 @@ img {
       flex-wrap: wrap;
   gap: 30px;
   padding: 0 0 94px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .port__items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .port__div {
   padding: 20px 24px;
@@ -1055,12 +1113,27 @@ img {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .port__div--first {
+    height: 145px;
+  }
+}
 .port__item {
   background-color: #ffffff;
   border: 0 solid #eeeeee;
   list-style: none;
   width: calc((100% - 60px) / 3);
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .port__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .port__item {
+    max-width: calc((100% - 60px) / 3);
+  }
 }
 .port__link:hover, .port__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1070,7 +1143,7 @@ img {
   display: block;
   text-decoration: none;
   color: var(--dark-txt-clr);
-  width: 370px;
+  width: 330px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1151,6 +1224,11 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid red;
 }
+@media screen and (min-width: 768px) {
+  .vector {
+    padding: 0;
+  }
+}
 .vector__btn {
   position: absolute;
   width: 30px;
@@ -1182,6 +1260,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  min-width: 450px;
   border-radius: 4px;
   background-color: var(--light-txt-clr);
   padding: 40px;
@@ -1199,6 +1278,22 @@ img {
 .svg__vector:hover,
 .svg__vector:focus {
   fill: var(--main-clr);
+}
+
+.check__span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .check__span {
+    font-size: 14px;
+  }
 }
 
 .form__title {
@@ -1413,4 +1508,8 @@ input {
 
 .check__btn:hover {
   background-color: var(--btn-clr);
+}
+
+.mobile__list {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
