@@ -86,14 +86,19 @@
 .header {
   border-bottom: 1px solid #ececec;
   border: 1px solid red;
+  position: relative;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   margin: 0 15px;
-  padding: 32px 0;
+  padding: 16px 0;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+  }
 }
 
 .icon__navigator {
