@@ -59,6 +59,7 @@
           class="menu-button"
           aria-expanded="false"
           aria-controls="mobile-menu"
+          data-modal-open=""
         >
           <svg
             class="menu__svg"
@@ -70,7 +71,11 @@
           </svg>
         </button>
       </div>
-      <button class="menu-container-close__btn js-open-menu">
+      <button
+        class="menu-container-close__btn js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg width="24" height="16">
           <use href="./images/icons.svg#icon-navigation"></use>
         </svg>
@@ -600,7 +605,7 @@
     </footer>
     <div class="vector is-hidden" data-modal>
       <div class="vector__container">
-        <button class="vector__btn" data-modal-close>
+        <button class="vector__btn">
           <svg class="svg__vector" width="11" height="11">
             <use href="./images/icons.svg#vector"></use>
           </svg>
@@ -678,7 +683,7 @@
       </div>
     </div>
 
-    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="19" height="19">
           <use href="./images/icons.svg#vector"></use>

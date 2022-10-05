@@ -1,11 +1,12 @@
 .nav,
 .info {
   display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .nav {
   margin-right: auto;
+  align-items: center;
 
   &__link {
     display: none;
@@ -46,8 +47,7 @@
     display: flex;
     gap: 50px;
     padding: 0;
-    margin-right: 96px;
-
+    position: relative;
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -58,6 +58,7 @@
 
   &__link.current {
     color: var(--main-clr);
+    position: relative;
   }
 
   &__link.current::after {
@@ -66,9 +67,13 @@
     width: 100%;
     height: 4px;
     left: 0;
-    bottom: -8px;
+    bottom: -30px;
     background-color: var(--main-clr);
     border-radius: 2px;
+
+    @media screen and (min-width: 1200px) {
+      bottom: -1px;
+    }
   }
 
   &__link:hover,
@@ -85,19 +90,18 @@
 
 .header {
   border-bottom: 1px solid #ececec;
-  border: 1px solid red;
   position: relative;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  margin: 0 15px;
+  margin-right: auto;
   padding: 16px 0;
   position: relative;
 
   @media screen and (min-width: 1200px) {
-    padding: 32px 0;
+    padding: 0;
   }
 }
 
@@ -136,6 +140,10 @@
   @media screen and (min-width: 1200px) {
     margin-right: 92px;
   }
+
+  @media screen and (min-width: 768px) and (msx-width: 1199px) {
+    margin-right: 87px;
+  }
 }
 
 .info {
@@ -149,15 +157,28 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     gap: 10px;
+    align-items: start;
   }
 }
 
 .mail__svg {
   margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .tel__svg {
   margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .menu_btn {

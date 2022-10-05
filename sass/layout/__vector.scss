@@ -9,7 +9,6 @@
   transition-property: visibility, opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid red;
   @media screen and (min-width: 768px) {
     padding: 0;
   }

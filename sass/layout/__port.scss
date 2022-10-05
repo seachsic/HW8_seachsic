@@ -1,7 +1,10 @@
 .port {
   padding-top: 94px;
   padding-bottom: 94px;
-  border: 1px solid red;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
 
   &__container {
     display: flex;
@@ -68,7 +71,7 @@
     }
   }
 
-  &__div {
+  &__content {
     padding: 20px 24px;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
@@ -84,7 +87,6 @@
     background-color: #ffffff;
     border: 0 solid #eeeeee;
     list-style: none;
-    width: calc((100% - 60px) / 3);
     padding: 0;
 
     @media screen and (min-width: 768px) {
