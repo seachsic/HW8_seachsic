@@ -7,8 +7,8 @@
 }
 
 .person__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: block;
 }
 
@@ -42,7 +42,7 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    width: 270px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
