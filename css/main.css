@@ -715,6 +715,12 @@ img {
   .person__text {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person__text {
+    max-width: 270px;
   }
 }
 
@@ -885,6 +891,11 @@ img {
   width: 170px;
   -ms-flex-preferred-size: calc((100% - 20px) / 2);
       flex-basis: calc((100% - 20px) / 2);
+}
+@media screen and (min-width: 300px) {
+  .clients__item {
+    max-width: 210px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   fill: var(--main-clr);

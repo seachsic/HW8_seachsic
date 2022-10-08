@@ -66,6 +66,10 @@
   &__item {
     width: 170px;
     flex-basis: calc((100% - 20px) / 2);
+
+    @media screen and (min-width: 300px) {
+      max-width: 210px;
+    }
   }
 
   &__link:hover,
