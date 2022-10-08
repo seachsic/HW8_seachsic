@@ -446,6 +446,11 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    margin-top: 30px;
+  }
+}
 .hero__btn:hover {
   background-color: var(--btn-clr);
 }
@@ -1592,12 +1597,12 @@ img {
   border-radius: 4px;
   background-color: var(--light-txt-clr);
   padding: 40px;
-  max-width: 450px;
+  min-width: 450px;
   width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .vector__container {
-    max-width: 480px;
+    max-width: 528px;
   }
 }
 
