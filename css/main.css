@@ -1003,6 +1003,11 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .footer__nav {
+    margin-bottom: 60px;
+  }
+}
 .footer__text {
   font-style: normal;
   font-weight: 400;
