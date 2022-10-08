@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/business2x.jpg);
+    url(../images/business2x.jpg);
   background-size: cover;
   margin: 0 auto;
   flex-direction: column;
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/business1.jpg);
+      url(../images/business1.jpg);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/business-tab.jpg);
+      url(../images/business-tab.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -42,7 +42,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/business.jpg);
+      url(../images/business.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
