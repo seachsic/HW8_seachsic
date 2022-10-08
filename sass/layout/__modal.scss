@@ -124,7 +124,7 @@ input {
 }
 
 .check__span {
-  position: absolute;
+  position: relative;
   left: 60px;
   display: contents;
   font-weight: 400;
@@ -151,6 +151,7 @@ input {
   margin-bottom: 30px;
   justify-content: center;
   position: relative;
+  gap: 7px;
 }
 
 .treaty__link {
