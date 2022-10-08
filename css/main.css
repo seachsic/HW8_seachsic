@@ -949,6 +949,11 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__address {
     margin-right: 165px;
@@ -1001,11 +1006,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .footer__nav {
-    margin-bottom: 60px;
   }
 }
 .footer__text {
