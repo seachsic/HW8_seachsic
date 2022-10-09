@@ -1771,8 +1771,8 @@ input {
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition-property: icon;
-  transition-property: icon;
+  -webkit-transition-property: fill;
+  transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1986,7 +1986,7 @@ input {
 }
 
 .mobile-content {
-  margin-top: auto;
+  margin-top: 180px;
 }
 .mobile-content__list {
   list-style: none;
